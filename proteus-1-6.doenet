@@ -1,0 +1,17 @@
+<setup>
+    <function name="f">-0.5*x^3+3*x+5</function>
+    <derivative name="fprime">$f</derivative>
+    <derivative name="fdblprime">$fprime</derivative>
+    <point name="P" labelIsName labelPosition="lowerRight">
+        <constrainTo>$f</constrainTo>
+    </point>
+    <point name="sd" labelPosition="lowerRight"> 
+        ($P.x, $$fdblprime($P.x))
+        <label>second derivative</label>
+    </point>
+</setup>
+<graph>
+    $f
+    $P
+    $sd
+</graph>
