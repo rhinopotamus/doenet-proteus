@@ -19,7 +19,7 @@
     <point name="right">
         ($P.x+1/sqrt(1+$m^2), $P.y+$m/sqrt(1+$m^2))
     </point>
-    <lineSegment name="hi" stylenumber="2" endpoints="$left $right"/>
+    <lineSegment name="tangent" stylenumber="2" endpoints="$left $right"/>
 </setup>
 <p>
     Below is the graph of a function <m>f</m> on which is a blue circle point <m>P</m>, which you can drag along the graph of <m>f</m>.  You will also see a purple diamond point representing the value of the second derivative of <m>f</m> corresponding to the point <m>P</m>.  As you move the point <m>P</m>, note that the tangent line to <m>f</m> moves along with the point.  

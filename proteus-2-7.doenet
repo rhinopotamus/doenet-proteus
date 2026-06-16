@@ -1,0 +1,36 @@
+<setup>
+    <curve name="circle" variable="t">
+        (4*cos(t), 4*sin(t))
+    </curve>
+    <point name="P" styleNumber="2">
+        <constrainTo>$circle</constrainTo>
+        <label>m = $m</label>
+    </point>
+    <number name="m">-$P.x/$P.y</number>
+    <vector name="r">$P</vector>
+    <vector name="rP">(-$P.y, $P.x)</vector>
+</setup>
+<p>
+In the window below, there is a plot of the circle <m>x^2+y^2=16</m> together with a segment of a tangent line to the circle at a moveable point. You can drag the point around the circle and observe the corresponding slope of the tangent line.
+</p>
+<graph
+    fixAxes="true" showNavigation="false"
+    xmin="-6" xmax="6"
+    ymin="-6" ymax="6" >
+    $circle
+    $P
+    <lineSegment 
+        endpoints="$r-0.5*$rP $r+0.5*$rP"
+        styleNumber="2">
+    </lineSegment>
+</graph>
+allowed error 0.01 absolute
+<p>
+<ol marker="(a)">
+    <li>
+        <mathInput name="flat">
+            <label>Find a point at which the slope of the tangent line is 0.</label>
+        </mathInput>
+    </li>
+</ol>
+</p>
