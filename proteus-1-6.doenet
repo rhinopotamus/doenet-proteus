@@ -1,17 +1,90 @@
 <setup>
-    <function name="f">-0.5*x^3+3*x+5</function>
+    <function name="f">-0.25*x^3+1.5*x+1</function>
     <derivative name="fprime">$f</derivative>
-    <derivative name="fdblprime">$fprime</derivative>
+    <derivative name="fPP">$fprime</derivative>
     <point name="P" labelIsName labelPosition="lowerRight">
         <constrainTo>$f</constrainTo>
     </point>
-    <point name="sd" labelPosition="lowerRight"> 
-        ($P.x, $$fdblprime($P.x))
-        <label>second derivative</label>
+    <point 
+        name="sd" 
+        labelPosition="lowerRight"
+        styleNumber="4"> 
+        ($P.x, $$fPP($P.x))
+        <label>2nd der.</label>
     </point>
+    <number name="m">$$fprime($P.x)</number>
+    <point name="left">
+        ($P.x-1/sqrt(1+$m^2), $P.y-$m/sqrt(1+$m^2))
+    </point>
+    <point name="right">
+        ($P.x+1/sqrt(1+$m^2), $P.y+$m/sqrt(1+$m^2))
+    </point>
+    <lineSegment name="hi" stylenumber="2" endpoints="$left $right"/>
 </setup>
-<graph>
+<p>
+    Below is the graph of a function <m>f</m> on which is a blue circle point <m>P</m>, which you can drag along the graph of <m>f</m>.  You will also see a purple diamond point representing the value of the second derivative of <m>f</m> corresponding to the point <m>P</m>.  As you move the point <m>P</m>, note that the tangent line to <m>f</m> moves along with the point.  
+</p>
+<graph
+    fixAxes="true" showNavigation="false"
+    xmin="-3" xmax="3"
+    ymin="-3" ymax="3" >
     $f
     $P
     $sd
+    $hi
 </graph>
+<p>
+    When the purple diamond point is <alert>above</alert> the horizontal axis,
+    the second derivative of <m>f</m> is <!-- positive -->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "1">positive</choice>
+            <choice credit = "0">negative</choice>
+        </choiceInput> 
+    </answer>, the tangent line near <m>P</m> is <!-- below -->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "0">above</choice>
+            <choice credit = "1">below</choice>
+        </choiceInput>
+        </answer>
+    the graph of <m>f</m>, 
+    and the graph of <m>f</m> opens <!-- upward -->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "1">upward</choice>
+            <choice credit = "0">downward</choice>
+        </choiceInput>
+    </answer>.
+</p>
+<p>
+    When the purple diamond point <alert>below</alert> the horizontal axis,
+    the second derivative of <m>f</m> is <!-- negative -->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "0">positive</choice>
+            <choice credit = "1">negative</choice>
+        </choiceInput>
+    </answer>
+    below the horizontal axis, 
+    the tangent line near <m>P</m> is <!-- above -->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "1">above</choice>
+            <choice credit = "0">below</choice>
+        </choiceInput>
+    </answer>
+    the graph of <m>f</m>, and the graph of <m>f</m> opens <!-- downward-->
+    <answer>
+        <choiceInput inline>
+            <choice credit = "0"><math>?</math></choice>
+            <choice credit = "0">upward</choice>
+            <choice credit = "1">downward</choice>
+        </choiceInput>
+    </answer>.
+</p>
