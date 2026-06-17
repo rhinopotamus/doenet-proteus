@@ -1,0 +1,86 @@
+<p>
+    In this section, we've considered the position of a ball at various times, and the rate of change of position, which is called <alert>velocity</alert>. Respond to the following questions to explore the units, and therefore the meanings, of other rates of change.
+</p>
+<ol marker="a">
+    <li>
+        <p>
+            Suppose that the population of a city changes as time goes on. 
+        </p>
+        <p>
+            <choiceInput inline name="a-indep">
+                <label>The units for the independent variable might be </label>
+                <choice>years</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="a-dep">
+                <label>The units for the dep variable might be </label>
+                <choice>people</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="a-roc-num">
+                <label>The units for the rate of change might be </label>
+                <choice>people</choice>
+            </choiceInput>
+            <choiceInput inline name="a-roc-denom">
+                <label>per </label>
+                <choice>year</choice>
+            </choiceInput>
+        </p>
+    </li>
+    <li>
+        <p>
+            As you ride in a rising weather balloon, the temperature of the air around decreases.
+        </p>
+        <p>
+            <choiceInput inline name="b-indep">
+                <label>The units for the independent variable might be </label>
+                <choice>miles</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="b-dep">
+                <label>The units for the dep variable might be </label>
+                <choice>degrees Fahrenheit</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="b-roc-num">
+                <label>The units for the rate of change might be </label>
+                <choice>miles</choice>
+            </choiceInput>
+            <choiceInput inline name="b-roc-denom">
+                <label>per </label>
+                <choice>degrees Fahrenheit</choice>
+            </choiceInput>
+        </p>
+    </li>
+    <li>
+        <p>
+            For a given trip of a particular distance, as the speed of the car increases, the travel time decreases.
+        </p>
+        <p>
+            <choiceInput inline name="c-indep">
+                <label>The units for the independent variable might be </label>
+                <choice>miles per hour</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="c-dep">
+                <label>The units for the dep variable might be </label>
+                <choice>minutes</choice>
+            </choiceInput>
+        </p>
+        <p>
+            <choiceInput inline name="c-roc-num">
+                <label>The units for the rate of change might be </label>
+                <choice>minutes</choice>
+            </choiceInput>
+            <choiceInput inline name="c-roc-denom">
+                <label>per </label>
+                <choice>miles per hour</choice>
+            </choiceInput>
+        </p>
+    </li>
+</ol>
