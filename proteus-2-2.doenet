@@ -29,7 +29,7 @@ Below is the graph of the function <m>f(x) = \sin(x)</m>.
     <function name="f">sin(x)</function>
 </graph>
 <p>
-    <ol>
+    <ol marker="a.">
         <li>
         From the graph, find three values where <m>f'(x) = 0</m>. (Remember, <m>f'(x) = 0</m> wherever the tangent line to <m>f(x)</m> is horizontal.)
         <p>
@@ -74,7 +74,7 @@ Below is the graph of the function <m>f(x) = \sin(x)</m>.
         </p>
         </li>
         <li>
-        Where would you say <m>f'(x)</m> is the most negative?
+        What is an <m>x</m>-value at which you would say <m>f'(x)</m> is the most negative?
         <p>
             <answer>
                 <mathInput name="mostNeg">
