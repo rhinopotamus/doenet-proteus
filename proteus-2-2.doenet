@@ -21,6 +21,7 @@
 Below is the graph of the function <m>f(x) = \sin(x)</m>.
 </p>
 <graph
+    size="large"
     fixAxes="true" showNavigation="false"
     identicalAxisScales
     xTickScaleFactor="pi"
