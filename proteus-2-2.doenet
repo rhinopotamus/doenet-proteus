@@ -1,0 +1,24 @@
+<p>
+Below is the graph of the function <m>f(x) = \sin(x)</m>.
+</p>
+<graph
+    fixAxes="true" showNavigation="false"
+    identicalAxisScales
+    xTickScaleFactor="pi"
+    displayYAxisTicks="false"
+    ymin="-2" ymax="2" >
+    <function name="f">sin(x)</function>
+</graph>
+<p>
+    <ol>
+        <li>
+        From the graph, find three values where <m>f'(x) = 0</m>. (Remember, <m>f'(x) = 0</m> wherever the tangent line to <m>f(x)</m> is horizontal.)
+        </li>
+        <li>
+        From the graph, find one interval where <m>f'(x) > 0</m>. 
+        </li>
+        <li>
+        From the graph, find one interval where <m>f'(x) < 0</m>. 
+        </li>
+    </ol>
+</p>
