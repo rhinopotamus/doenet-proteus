@@ -1,0 +1,52 @@
+<p>
+<ol>
+    <li>
+        <p>
+            Suppose that <m>p(x)=3x+5</m>, and notice that this function is linear. What is the value of the slope of <m>p</m> at any point on the graph?
+            <answer>
+                <mathInput /> 3
+            </answer>
+        </p>
+        <p>
+            Therefore, the formula for <m>p'(x)</m> = 
+            <answer>
+                <mathInput /> 3
+            </answer>
+        </p>
+    </li>
+    <li>
+        <p>
+            Now consider the linear function <m>q(x) = 8 - 5x</m>. What is the value of the slope of <m>q</m> at any point on the graph?
+            <answer>
+                <mathInput /> -5
+            </answer>
+        </p>
+        <p>
+            Therefore, the formula for <m>q'(x)</m> = 
+            <answer>
+                <mathInput /> -5
+            </answer>
+        </p>
+    </li>
+    <li>
+        <p>
+            If <m>r(x) = p(x) + q(x)</m>, what do you think should be the formula for <m>r'(x)</m>?
+        </p>
+        <p> <m>r'(x) = </m>
+            <answer>
+                <mathInput /> -2
+            </answer>
+        </p>
+    </li>
+    <li>
+        <p>
+            If <m>s(x) = 4\cdot p(x)</m>, what do you think should be the formula for <m>s'(x)</m>? 
+        </p>
+        <p> <m>s'(x) = </m>
+            <answer>
+                <mathInput /> 12
+            </answer>
+        </p>
+    </li>
+</ol>
+</p>
