@@ -1,3 +1,22 @@
+<setup>
+    <mathList name="flats">
+        pi/2 3*pi/2 5*pi/2 -pi/2 -3*pi/2 -5*pi/2
+    </mathList>
+    <subsetOfReals name="incs">
+        (-5*pi/2, -3*pi/2) union
+        (-pi/2, pi/2) union
+        (3*pi/2, 5*pi/2)
+    </subsetOfReals>
+    <subsetOfReals name="decs">
+        (-7*pi/2, -5*pi/2) union
+        (-3*pi/2, -pi/2) union
+        (pi/2, 3*pi/2) union
+        (5*pi/2, 7*pi/2)
+    </subsetOfReals>
+    <mathList name="mins">
+        -3*pi -pi pi 3*pi
+    </mathList>
+</setup>
 <p>
 Below is the graph of the function <m>f(x) = \sin(x)</m>.
 </p>
@@ -13,15 +32,59 @@ Below is the graph of the function <m>f(x) = \sin(x)</m>.
     <ol>
         <li>
         From the graph, find three values where <m>f'(x) = 0</m>. (Remember, <m>f'(x) = 0</m> wherever the tangent line to <m>f(x)</m> is horizontal.)
+        <p>
+            <answer matchPartial>
+                <mathInput name="x1">
+                    <label><m>x = </m></label>
+                </mathInput>
+                <mathInput name="x2">
+                    <label><m>x = </m></label>
+                </mathInput>
+                <mathInput name="x3">
+                    <label><m>x = </m></label>
+                </mathInput>
+                <award><when>
+                    $x1 elementof $flats and
+                    $x2 elementof $flats and
+                    $x3 elementof $flats 
+                </when></award>
+            </answer>
+        </p>
         </li>
         <li>
         From the graph, find one interval where <m>f'(x) > 0</m>. 
+        <p>
+            <answer>
+                <mathInput name="incInterval">
+                    <label><m>f'(x) > 0</m> on </label>
+                </mathInput>
+                <award><when>$incInterval subset $incs </when></award>
+            </answer>
+        </p>
         </li>
         <li>
         From the graph, find one interval where <m>f'(x) < 0</m>. 
+        <p>
+            <answer>
+                <mathInput name="decInterval">
+                    <label><m>f'(x) > 0</m> on </label>
+                </mathInput>
+                <award><when>$decInterval subset $decs </when></award>
+            </answer>
+        </p>
         </li>
         <li>
-        Where would you say f'(x) is the highest? (most positive?) lowest? (most negative?)
+        Where would you say <m>f'(x)</m> is the most negative?
+        <p>
+            <answer>
+                <mathInput name="mostNeg">
+                    <label><m>x=</m></label>
+                </mathInput>
+                <award><when>
+                    $mostNeg elementof $mins
+                </when></award>
+            </answer>
+        </p>
         </li>
     </ol>
 </p>
