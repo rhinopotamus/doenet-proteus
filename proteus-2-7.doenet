@@ -4,14 +4,14 @@
     </curve>
     <point name="P" styleNumber="2">
         <constrainTo>$circle</constrainTo>
-        <label>m = $m</label>
+        <label>($P.x, $P.y)</label>
     </point>
     <number name="m">-$P.x/$P.y</number>
     <vector name="r">$P</vector>
     <vector name="rP">(-$P.y, $P.x)</vector>
 </setup>
 <p>
-In the window below, there is a plot of the circle <m>x^2+y^2=16</m> together with a segment of a tangent line to the circle at a moveable point. You can drag the point around the circle and observe the corresponding slope of the tangent line.
+In the window below, there is a plot of the circle <m>x^2+y^2=16</m> together with a segment of a tangent line to the circle at a moveable point. You can drag the point around the circle and observe the corresponding slope of the tangent line, which is computed and displayed in the bottom-right corner of the graph.
 </p>
 <graph
     fixAxes="true" showNavigation="false"
@@ -23,14 +23,51 @@ In the window below, there is a plot of the circle <m>x^2+y^2=16</m> together wi
         endpoints="$r-0.5*$rP $r+0.5*$rP"
         styleNumber="2">
     </lineSegment>
+    <label 
+        anchor="(1, -5)"
+        positionFromAnchor="right">Slope of tangent line = $m</label>
 </graph>
-allowed error 0.01 absolute
 <p>
-<ol marker="(a)">
-    <li>
+<ol marker="a">
+    <li><answer allowedErrorInNumbers="0.1" allowedErrorIsAbsolute>
         <mathInput name="flat">
             <label>Find a point at which the slope of the tangent line is 0.</label>
         </mathInput>
-    </li>
+        <award>
+            <when>
+                $flat.x = 0 and $flat.x^2 + $flat.y^2 =16
+            </when>
+        </award>
+    </answer></li>
+    <li><answer allowedErrorInNumbers="0.2" allowedErrorIsAbsolute>
+        <mathInput name="two">
+            <label>Find a point at which the slope of the tangent line is -2.</label>
+        </mathInput>
+        <award>
+            <when>
+                $two.x^2 + $two.y^2 =16 and -$two.x/$two.y = -2
+            </when>
+        </award>
+    </answer></li>
+    <li><answer allowedErrorInNumbers="0.2" allowedErrorIsAbsolute>
+        <mathInput name="onethird">
+            <label>Find a point at which the slope of the tangent line is 1/3.</label>
+        </mathInput>
+        <award>
+            <when>
+                $onethird.x^2 + $onethird.y^2 =16 and -$onethird.x/$onethird.y = 1/3
+            </when>
+        </award>
+    </answer></li>
+    <li><answer allowedErrorInNumbers="0.2" allowedErrorIsAbsolute>
+        <mathInput name="undef">
+            <label>Find a point at which the slope of the tangent line is undefined.</label>
+        </mathInput>
+        <award>
+            <when>
+                $undef.x^2 + $undef.y^2 =16 and $undef.y = 0
+            </when>
+        </award>
+    </answer></li>
 </ol>
 </p>
