@@ -1,0 +1,83 @@
+<p>
+    You are riding a hot air balloon that is moving straight upward. You have an altimeter that tells you how high (in miles) above the ground the balloon is at a certain number of hours since the ride started [you can call it <m>A(t)</m>]. You also have a thermometer that gives the air temperature (in degrees Fahrenheit) that you feel as a function of altitude [you can call it <m>T(A)</m>]. 
+</p>
+
+<p>One hour into the ride, you happen to look at the screen and see the following: <m>A'(1)=2.3</m> and <m>F'(2)=-16</m>.
+<ol marker="a">
+
+    <li>
+        <p>
+            What are the units on the <m>1</m> and the <m>2.3</m> in <m>A'(1) = 2.3</m>?
+        </p>
+        <p>
+            <answer><choiceInput inline>
+                <label><m>1</m> has units of </label> 
+                <choice credit = "0">?</choice>
+                <choice credit = "0">miles</choice>
+                <choice credit = "1">hours</choice>
+                <choice credit = "0">degrees Fahrenheit</choice>
+            </choiceInput></answer>
+        </p>
+        <p>
+            <answer>
+                <choiceInput inline name="num23">
+                    <label><m>2.3</m> has units of</label> 
+                    <choice>?</choice>
+                    <choice>miles</choice>
+                    <choice>hours</choice>
+                    <choice>degrees Fahrenheit</choice>
+                </choiceInput>
+                <choiceInput inline name="denom23">
+                    <label>per</label> 
+                    <choice>?</choice>
+                    <choice>miles</choice>
+                    <choice>hours</choice>
+                    <choice>degrees Fahrenheit</choice>
+                </choiceInput>
+                <award><when>
+                    $num23.selectedIndices = 2 and
+                    $denom23.selectedIndices = 3
+                </when></award>
+            </answer>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            What are the units on the 2 and the -16 in <m>T'(2)=-16</m>?
+        </p>
+        <p>
+            <answer><choiceInput inline>
+            <label><m>2</m> has units of </label> 
+            <choice credit = "0">?</choice>
+            <choice credit = "1">miles</choice>
+            <choice credit = "0">hours</choice>
+            <choice credit = "0">degrees Fahrenheit</choice>
+          </choiceInput></answer>
+        </p>
+        <p>
+          <answer>
+              <choiceInput inline name="num16">
+                <label><m>-16</m> has units of</label>
+                <choice>?</choice>
+                <choice>miles</choice>
+                <choice>hours</choice>
+                <choice>degrees Fahrenheit</choice>
+              </choiceInput>
+              <choiceInput inline name="denom16">
+                <label>per</label>
+                <choice>?</choice>
+                <choice>miles</choice>
+                <choice>hours</choice>
+                <choice>degrees Fahrenheit</choice>
+              </choiceInput>
+              <award><when>
+                $num16.selectedIndices = 4 and
+                $denom16.selectedIndices = 2
+              </when></award>
+          </answer>
+        </p>
+    </li>
+
+    <li><p>Explain in your own words how the air temperature you feel is changing with time, one hour into the ride, and find that rate.</p></li>
+</ol></p>
