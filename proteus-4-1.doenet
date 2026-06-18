@@ -15,6 +15,9 @@ The graph below shows <m>c(x)</m> together with a shaded region <m>A</m>.
     yLabelAlignment="right"
     displayXAxisTickLabels="false"
     displayYAxisTickLabels="false">
+    <shortDescription>
+        A graph of a traffic density function, with a rectangular region whose top-left corner touches the curve.
+    </shortDescription>
     <xLabel>miles</xLabel>
     <yLabel>cars per mile</yLabel>
     $c
