@@ -108,24 +108,33 @@
             Use your work above to fill in the blanks in this sentence about your hot air balloon ride:
         </p>
         When your watch says that 
-        <mathInput name="time" />
+        <mathInput name="time">
+            <shortDescription>numerical value of time</shortDescription>
+        </mathInput>
         <choiceInput inline name="timeUnits">
+            <shortDescription>units of time</shortDescription>
             <choice>miles</choice>
             <choice>hours</choice>
             <choice>degrees Fahrenheit</choice>
         </choiceInput>
         have elapsed, <br/>
         you are 
-        <mathInput name="altitude" />
+        <mathInput name="altitude" >
+            <shortDescription>numerical value of altitude</shortDescription>
+        </mathInput>
         <choiceInput inline name="altitudeUnits">
+            <shortDescription>units of altitude</shortDescription>
             <choice>miles</choice>
             <choice>hours</choice>
             <choice>degrees Fahrenheit</choice>
         </choiceInput>
         above the ground, <br/>
         the hot air balloon is rising at a rate of 
-        <mathInput name="speed" />
+        <mathInput name="speed">
+            <shortDescription>numerical value of speed</shortDescription>
+        </mathInput>
         <choiceInput inline name="speedUnitsNum">
+            <shortDescription>units of speed, numerator</shortDescription>
             <choice>miles</choice>
             <choice>hours</choice>
             <choice>degrees Fahrenheit</choice>
@@ -144,6 +153,7 @@
         ,<br/>
         and the temperature is changing at a rate of <m>$product</m>
             <choiceInput inline name="tempUnitsNum">
+                <shortDescription>units of rate of change of temperature, numerator</shortDescription>
                 <choice>miles</choice>
                 <choice>hours</choice>
                 <choice>degrees Fahrenheit</choice>
