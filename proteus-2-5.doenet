@@ -1,9 +1,9 @@
 <p>
-    You are riding a hot air balloon that is moving straight upward. You have an altimeter that tells you how high (in miles) above the ground the balloon is at a certain number of hours since the ride started [you can call it <m>A(t)</m>]. You also have a thermometer that gives the air temperature (in degrees Fahrenheit) that you feel as a function of altitude [you can call it <m>T(A)</m>]. 
+    You are riding in a hot air balloon that is moving straight upward. You have an altimeter that tells you how high (in miles) above the ground the balloon is at a certain number of hours since the ride started [you can call it <m>A(t)</m>]. You also have a thermometer that gives the air temperature (in degrees Fahrenheit) that you feel as a function of altitude [you can call it <m>T(A)</m>]. 
 </p>
 
-<p>Some time into the ride, you happen to look at the screen and see the following: <m>A'(0.25)=0.84</m> and <m>T'(0.43)=-16</m>.
-<ol marker="a">
+<p>Some time into the ride, you look at the screen, and at that instant, both <m>A'(0.25)=0.84</m> and <m>T'(0.43)=-16</m>.
+<ol marker="a" >
 
     <li>
         <p>
@@ -18,7 +18,7 @@
             </choiceInput></answer>
         </p>
         <p>
-            <answer>
+            <answer matchPartial forceSmallCheckWorkButton>
                 <choiceInput inline name="num84">
                     <label><m>0.84</m> has units of</label> 
                     <choice>miles</choice>
@@ -52,7 +52,7 @@
           </choiceInput></answer>
         </p>
         <p>
-          <answer>
+          <answer forceSmallCheckWorkButton>
               <choiceInput inline name="num16">
                 <label><m>-16</m> has units of</label>
                 <choice>miles</choice>
@@ -75,10 +75,11 @@
 
     <li>
         <p>
-            What would you get if you multiplied <m>A'(0.25)</m> and <m>T'(0.43)</m>?
+            What would you get if you multiplied <m>A'(0.25)</m> and <m>T'(0.43)</m>?<br/>
+            Reminder: at the instant you looked at the screen, both <m>A'(0.25)=0.84</m> and <m>T'(0.43)=-16</m>.
         </p>
         <p>
-            <answer matchPartial>
+            <answer matchPartial forceSmallCheckWorkButton>
                 <mathInput name="product">
                     <label><m>A'(0.25) \cdot T'(0.43) = </m></label>
                 </mathInput>
@@ -106,9 +107,65 @@
         <p>
             Use your work above to fill in the blanks in this sentence about your hot air balloon ride:
         </p>
-        When your watch says that [0.25] [hours] have elapsed, 
-        you are [0.43] [miles] above the ground,
-        the hot air balloon is rising at a rate of [0.84] [mph],
-        and the temperature is changing at a rate of [-13.44] [degF per hour].
+        When your watch says that 
+        <mathInput name="time" />
+        <choiceInput inline name="timeUnits">
+            <choice>miles</choice>
+            <choice>hours</choice>
+            <choice>degrees Fahrenheit</choice>
+        </choiceInput>
+        have elapsed, <br/>
+        you are 
+        <mathInput name="altitude" />
+        <choiceInput inline name="altitudeUnits">
+            <choice>miles</choice>
+            <choice>hours</choice>
+            <choice>degrees Fahrenheit</choice>
+        </choiceInput>
+        above the ground, <br/>
+        the hot air balloon is rising at a rate of 
+        <mathInput name="speed" />
+        <choiceInput inline name="speedUnitsNum">
+            <choice>miles</choice>
+            <choice>hours</choice>
+            <choice>degrees Fahrenheit</choice>
+        </choiceInput>
+        <choiceInput inline name="speedUnitsDenom">
+            <label>per</label>
+            <choice>mile</choice>
+            <choice>hour</choice>
+            <choice>degree Fahrenheit</choice>
+        </choiceInput>
+        <award><when>
+            $speed=0.84 and
+            $speedUnitsNum.selectedValues = <text>miles</text> and
+            $speedUnitsDenom.selectedValues = <text>hour</text>
+        </when></award>
+        ,<br/>
+        and the temperature is changing at a rate of <m>$product</m>
+            <choiceInput inline name="tempUnitsNum">
+                <choice>miles</choice>
+                <choice>hours</choice>
+                <choice>degrees Fahrenheit</choice>
+            </choiceInput>
+            <choiceInput inline name="tempUnitsDenom">
+                <label>per</label>
+                <choice>mile</choice>
+                <choice>hour</choice>
+                <choice>degree Fahrenheit</choice>
+            </choiceInput>.
+        <answer matchPartial>
+        <award><when>
+            $time=0.25 and
+            $timeUnits.selectedValues = <text>hours</text> and
+            $altitude=0.43 and
+            $altitudeUnits.selectedValues = <text>miles</text> and
+            $speed=0.84 and
+            $speedUnitsNum.selectedValues = <text>miles</text> and
+            $speedUnitsDenom.selectedValues = <text>hour</text> and
+            $tempUnitsNum.selectedValues = <text>degrees Fahrenheit</text> and
+            $tempUnitsDenom.selectedValues = <text>hour</text>
+        </when></award>
+        </answer>
     </li>
 </ol></p>
