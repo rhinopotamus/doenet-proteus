@@ -1,59 +1,129 @@
 <p>
-    In this section, we've considered the position of a ball at various times, and the rate of change of position, which is called <alert>velocity</alert>. Respond to the following questions to explore the units, and therefore the meanings, of other rates of change.
+    In this section, we've considered the position of a ball at various times, and the rate of change of position, which is called <em>velocity</em>. Respond to the following questions to explore the units, and therefore the meanings, of other rates of change.
 </p>
 <ol marker="a">
     <li>
         <p>
-            Suppose that the population of a city changes as time goes on. 
+            The more people there are in a city, the more tax revenue is collected.
         </p>
         <p>
-            <choiceInput inline name="a-indep">
-                <label>The units for the independent variable might be </label>
-                <choice>years</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the independent variable might be </label>
+                    <choice>dollars</choice>
+                    <choice credit="1">people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="a-dep">
-                <label>The units for the dep variable might be </label>
-                <choice>people</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the dependent variable might be </label>
+                    <choice credit="1">dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="a-roc-num">
-                <label>The units for the rate of change might be </label>
-                <choice>people</choice>
-            </choiceInput>
-            <choiceInput inline name="a-roc-denom">
-                <label>per </label>
-                <choice>year</choice>
-            </choiceInput>
+            <answer matchPartial>
+                <choiceInput shuffleOrder inline name="aRocNum">
+                    <label>The units for the rate of change might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+                <choiceInput shuffleOrder inline name="aRocDenom">
+                    <label>per </label>
+                    <choice>dollar</choice>
+                    <choice>person</choice>
+                    <choice>meter</choice>
+                    <choice>degree Fahrenheit</choice>
+                    <choice>meter per hour</choice>
+                    <choice>hour</choice>
+                </choiceInput>
+                <award><when>
+                    $aRocNum.selectedValues=<text>dollars</text> and
+                    $aRocDenom.selectedValues=<text>person</text>
+                </when></award>
+            </answer>
+        </p>
+        <p>
+            <answer type="text" handGraded expanded forceFullCheckWorkButton>
+                <label>So, what does the rate of change tell us about the city?</label>
+            </answer>
         </p>
     </li>
     <li>
         <p>
-            As you ride in a rising weather balloon, the temperature of the air around decreases.
+            As you ride in a rising weather balloon, the temperature of the air around you decreases.
         </p>
         <p>
-            <choiceInput inline name="b-indep">
-                <label>The units for the independent variable might be </label>
-                <choice>miles</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the independent variable might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice credit="1">meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="b-dep">
-                <label>The units for the dep variable might be </label>
-                <choice>degrees Fahrenheit</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the dependent variable might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice credit="1">degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="b-roc-num">
-                <label>The units for the rate of change might be </label>
-                <choice>miles</choice>
-            </choiceInput>
-            <choiceInput inline name="b-roc-denom">
-                <label>per </label>
-                <choice>degrees Fahrenheit</choice>
-            </choiceInput>
+            <answer matchPartial>
+                <choiceInput shuffleOrder inline name="bRocNum">
+                    <label>The units for the rate of change might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+                <choiceInput shuffleOrder inline name="bRocDenom">
+                    <label>per </label>
+                    <choice>dollar</choice>
+                    <choice>person</choice>
+                    <choice>meter</choice>
+                    <choice>degree Fahrenheit</choice>
+                    <choice>meter per hour</choice>
+                    <choice>hour</choice>
+                </choiceInput>
+                <award><when>
+                    $bRocNum.selectedValues=<text>degrees Fahrenheit</text> and
+                    $bRocDenom.selectedValues=<text>meter</text>
+                </when></award>
+            </answer>
+        </p>
+        <p>
+            <answer type="text" handGraded expanded forceFullCheckWorkButton>
+                <label>So, what does the rate of change tell us about your hot air balloon ride?</label>
+            </answer>
         </p>
     </li>
     <li>
@@ -61,26 +131,61 @@
             For a given trip of a particular distance, as the speed of the car increases, the travel time decreases.
         </p>
         <p>
-            <choiceInput inline name="c-indep">
-                <label>The units for the independent variable might be </label>
-                <choice>miles per hour</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the independent variable might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice credit="1">meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="c-dep">
-                <label>The units for the dep variable might be </label>
-                <choice>minutes</choice>
-            </choiceInput>
+            <answer>
+                <choiceInput shuffleOrder inline>
+                    <label>The units for the dependent variable might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice credit="1">hours</choice>
+                </choiceInput>
+            </answer>
         </p>
         <p>
-            <choiceInput inline name="c-roc-num">
-                <label>The units for the rate of change might be </label>
-                <choice>minutes</choice>
-            </choiceInput>
-            <choiceInput inline name="c-roc-denom">
-                <label>per </label>
-                <choice>miles per hour</choice>
-            </choiceInput>
+            <answer matchPartial>
+                <choiceInput shuffleOrder inline name="cRocNum">
+                    <label>The units for the rate of change might be </label>
+                    <choice>dollars</choice>
+                    <choice>people</choice>
+                    <choice>meters</choice>
+                    <choice>degrees Fahrenheit</choice>
+                    <choice>meters per hour</choice>
+                    <choice>hours</choice>
+                </choiceInput>
+                <choiceInput shuffleOrder inline name="cRocDenom">
+                    <label>per </label>
+                    <choice>dollar</choice>
+                    <choice>person</choice>
+                    <choice>meter</choice>
+                    <choice>degree Fahrenheit</choice>
+                    <choice>meter per hour</choice>
+                    <choice>hour</choice>
+                </choiceInput>
+                <award><when>
+                    $cRocNum.selectedValues=<text>hours</text> and
+                    $cRocDenom.selectedValues=<text>meter per hour</text>
+                </when></award>
+            </answer>
+        </p>
+        <p>
+            <answer type="text" handGraded expanded forceFullCheckWorkButton>
+                <label>So, what does the rate of change tell us about your trip?</label>
+            </answer>
         </p>
     </li>
 </ol>
