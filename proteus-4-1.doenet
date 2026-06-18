@@ -1,0 +1,88 @@
+<setup>
+<function name="c">200 + 100 exp(-0.1*x)</function>
+</setup>
+<p>
+Suppose that the function
+<m>c(x) = 200 + 100 e^{-0.1x}</m> models the density of traffic on a straight road,
+measured in cars per mile,
+where <m>x</m> is the number of miles east of a major interchange.
+
+The graph below shows <m>c(x)</m> together with a shaded region <m>A</m>.
+</p>
+<graph fixAxes showNavigation="false"
+    xmin="-1" xmax="20"
+    ymin="-20" ymax="330" 
+    yLabelAlignment="right"
+    displayXAxisTickLabels="false"
+    displayYAxisTickLabels="false">
+    <xLabel>miles</xLabel>
+    <yLabel>cars per mile</yLabel>
+    $c
+    <polygon
+        name="A"
+        applyStyleToLabel
+        labelIsName
+        styleNumber="3"
+        filled
+        draggable="false"
+        vertices="
+            (6,$$c(6))
+            (8,$$c(6))
+            (8,0)
+            (6,0)"/>
+</graph>
+
+<ol marker="a">
+<li>
+    <p>
+    What are the units on the <em>height</em> of <m>A</m>?
+    <answer>
+        <choiceInput inline name="c1">
+            <shortDescription>What are the units on the height of A?</shortDescription>
+            <choice>cars</choice>
+            <choice>miles</choice>
+            <choice credit="1">cars per mile</choice>
+            <choice>miles per car</choice>
+        </choiceInput>
+    </answer> 
+    </p>
+</li>
+<li>
+    <p>
+    What are the units on the <em>width</em> of <m>A</m>?
+    <answer>
+        <choiceInput inline name="c2">
+            <shortDescription>What are the units on the width of A?</shortDescription>
+            <choice>cars</choice>
+            <choice credit="1">miles</choice>
+            <choice>cars per mile</choice>
+            <choice>miles per car</choice>
+        </choiceInput>
+    </answer>
+    </p>
+</li>
+<li>
+    <p>
+    Say that the height of <m>A</m> is $$c(6), and that the width of <m>A</m> is <m>2</m>.
+    </p>
+    <p>
+    What is the <em>area</em> of <m>A</m>?
+    <answer forceSmallCheckWorkButton matchPartial allowedErrorInNumbers="1" allowedErrorIsAbsolute>
+        <mathInput name="product">
+            <shortDescription>What is the area of A?</shortDescription>
+        </mathInput>
+        <choiceInput inline name="c3">
+            <label>with units</label>
+            <choice>cars</choice>
+            <choice>miles</choice>
+            <choice>cars per mile</choice>
+            <choice>miles per car</choice>
+        </choiceInput>
+        <award><when>
+            $product = $$c(6)*2 and
+            $c3.selectedValues = <text>cars</text>
+        </when></award>
+    </answer>
+    </p>
+</li>
+</ol>
